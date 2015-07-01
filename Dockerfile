@@ -43,5 +43,8 @@ RUN \
   cd .. && \
   rm -rf luarocks-2.2.0
 
+# clone git repo
+WORKDIR /home
+RUN git clone https://github.com/karpathy/char-rnn
 
 
