@@ -16,7 +16,9 @@ RUN apt-get -y install \
 	gcc \
 	gfortran \
 	g++ \ 
-	curl
+	curl \
+	lua5.2 \
+	liblua5.2-dev
 RUN pip install numpy scipy
 
 # torch installation
