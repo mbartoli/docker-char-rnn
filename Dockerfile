@@ -44,10 +44,9 @@ RUN \
   rm -rf luarocks-2.2.0
 
 # torch extras
-RUN luarocks install nngraph
-RUN luarocks install optim
-RUN luarocks install cutorch
-RUN luarocks install cunn
+WORKDIR /home
+#RUN luarocks install nngraph
+#RUN luarocks install optim
 
 # clone git repo
 WORKDIR /home
