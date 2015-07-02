@@ -43,6 +43,12 @@ RUN \
   cd .. && \
   rm -rf luarocks-2.2.0
 
+# torch extras
+RUN luarocks install nngraph
+RUN luarocks install optim
+RUN luarocks install cutorch
+RUN luarocks install cunn
+
 # clone git repo
 WORKDIR /home
 RUN git clone https://github.com/karpathy/char-rnn
