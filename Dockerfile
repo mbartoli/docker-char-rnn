@@ -45,11 +45,11 @@ RUN \
 
 # torch extras
 WORKDIR /home
-#RUN luarocks install nngraph
-#RUN luarocks install optim
+RUN /home/torch/install/bin/luarocks --server=https://raw.githubusercontent.com/torch/rocks/master install nngraph
+RUN /home/torch/install/bin/luarocks --server=https://raw.githubusercontent.com/torch/rocks/master --local install optim
 
 # clone git repo
 WORKDIR /home
 RUN git clone https://github.com/karpathy/char-rnn
 
-
+WORKDIR /home/char-rnn
