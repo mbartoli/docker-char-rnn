@@ -22,5 +22,6 @@ Run `docker run -it mbartoli/char-rnn`
 See the [documentation](https://github.com/karpathy/char-rnn) on how to train and sample your char-rnn.
 
 ## More Information
+Docker Hub: [mbartoli/char-nn](https://hub.docker.com/r/mbartoli/char-rnn/)  
 [https://github.com/karpathy/char-rnn](https://github.com/karpathy/char-rnn)   
 [http://karpathy.github.io/2015/05/21/rnn-effectiveness/](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
